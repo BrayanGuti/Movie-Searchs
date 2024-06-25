@@ -1,27 +1,39 @@
-## Enunciado
+# 🎬 Movie Finder App 🎬
 
-Crea una aplicación para buscar películas
+Welcome to the Movie Finder App! This simple project leverages the [OMDb API](https://www.omdbapi.com/) to fetch and display movie information for users. 🌟
 
-API a usar: - https://www.omdbapi.com/
-API_KEY: 4287ad07
-Consigue la API Key en la propia página web registrando tu email.
+## Features 🚀
 
-Requerimientos:
+- 🔍 **Search Movies**: Type the name of the movie you wish to search for in the text input.
+- ⏳ **Debounce Search**: The search input has a 700-millisecond debounce, meaning the movie search is triggered automatically if no keyboard activity is detected for 700 milliseconds.
+- 🖱️ **Search Button**: A search button is also available to trigger the movie search manually with the same functionality.
+- 🔄 **Sort Alphabetically**: Includes a checkbox to sort the movies alphabetically.
+- 🚫 **Prevent Duplicate Searches**: The app prevents users from making duplicate searches with the same input text to enhance performance by avoiding redundant queries.
 
-✅ Necesita mostrar un input para buscar la película y un botón para buscar.
+## Getting Started 🛠️
 
-✅ Lista las películas y muestra el título, año y poster.
+Follow these instructions to set up and run the project on your local machine.
 
-✅ Que el formulario funcione
+### Prerequisites 📋
 
-✅ Haz que las películas se muestren en un grid responsive.
+- Node.js and npm
+- An API key from [OMDb API](https://www.omdbapi.com/apikey.aspx)
 
-✅ Hacer el fetching de datos a la API
+### Installation 🔧
 
-Primera iteración:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/movie-finder-app.git
+    cd movie-finder-app
+    ```
 
-✅ Evitar que se haga la misma búsqueda dos veces seguidas.
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-✅ Haz que la búsqueda se haga automáticamente al escribir.
+### Usage ▶️
 
-✅ Evita que se haga la búsqueda continuamente al escribir (debounce)
+Run the development server:
+```bash
+npm run dev
